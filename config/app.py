@@ -1,4 +1,5 @@
 import sys
+from app.controller import *
 
 class App:
   __instance = None
@@ -8,6 +9,7 @@ class App:
     return App.__instance
 
   def run(self):
+    print("2048")
+    print("Use as setas para comando:")
     while True:
-      input_var = input("Command : ")
-      print ("you entered " + input_var)
+      input_var = input("")
