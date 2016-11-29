@@ -1,5 +1,6 @@
-import sys
-from app.controller import *
+import readchar
+import os
+#from app.controller import *
 
 class App:
   __instance = None
@@ -9,7 +10,21 @@ class App:
     return App.__instance
 
   def run(self):
-    print("2048")
-    print("Use as setas para comando:")
+    input_var = ''
     while True:
-      input_var = input("")
+      os.system('clear')
+      print("2048 by José Roniérison")
+      print("Use: ")
+      print(" - w to up:")
+      print(" - s to down:")
+      print(" - a to left:")
+      print(" - d to left:")
+      print("----------------")
+      print(" - q to quit:")
+      print(input_var)
+
+      if(input_var == 'q'):
+        exit()
+
+      input_var = readchar.readchar()
+      print(input_var)
