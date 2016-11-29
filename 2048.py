@@ -1,4 +1,4 @@
-from config.app import App
+from controls.app import App
 
 app = App()
 

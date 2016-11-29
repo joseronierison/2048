@@ -1,0 +1,4 @@
+<% from mako.template import Template
+for line in canvas:
+  print(Template(filename="controls/views/line.txt").render(line=line))
+endfor %>

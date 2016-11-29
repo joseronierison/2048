@@ -1,0 +1,8 @@
+2048 by @joseronierison
+Use:
+  w) to up
+  s) to down
+  a) to left
+  d) to left
+ -
+  q) to quit
