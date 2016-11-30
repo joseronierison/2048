@@ -3,6 +3,7 @@ import sys
 import importlib
 import readchar
 from mako.template import Template
+from game.canvas import Canvas
 
 class App:
   __instance = None
@@ -13,23 +14,16 @@ class App:
 
   def run(self):
     output = '-'
-    canvas = []
-    canvas.append([0,0,0,0])
-    canvas.append([0,0,0,0])
-    canvas.append([0,0,0,0])
-    canvas.append([0,0,2,4])
+    canvas = Canvas()
 
     while True:
       os.system('clear')
       print(Template(filename="controls/views/menu.txt").render())
       print('')
-      print(Template(filename="controls/views/canvas.txt").render(canvas=canvas))
+      print(Template(filename="controls/views/canvas.txt").render(canvas=canvas.canvas))
       print(Template("=> ${output}").render(output=output))
 
       command = readchar.readchar()
-
-      if command == '0':
-        exit()
 
       try:
         module_name = Template("controls.controllers.${command}_controller").render(command=command)
