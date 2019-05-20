@@ -9,5 +9,3 @@ Run with:
 ```
 python3 -m unittest **/*-test.py
 ```
-
-A study code by José Roniérison
