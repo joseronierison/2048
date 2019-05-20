@@ -1,4 +1,4 @@
-# 2048 - Game
+# 2048 Game
 
 [![Build Status](https://travis-ci.org/joseronierison/2048.svg?branch=master)](https://travis-ci.org/joseronierison/2048)
 
